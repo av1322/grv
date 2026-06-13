@@ -1,4 +1,12 @@
-    $("#wtBtn").click(function () {
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi',
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+$("#wtBtn").click(function () {
 
       $("body").addClass("fade-out");
 
